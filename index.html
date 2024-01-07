@@ -86,22 +86,6 @@
 
     <h3>Paper and Preprints</h3>
     <!-- we use collapsible now baby-->
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-        </script>
 
 
 <button type="button" class="collapsible"><a href="https://arxiv.org/abs/???"> <b>A braided $(\infty,2)$-category of Soergel bimodules</b></a></button>
@@ -200,6 +184,24 @@
             </li>
         </ul>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
     <hr>
 
 
