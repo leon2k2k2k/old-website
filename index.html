@@ -61,7 +61,7 @@
 <body>
 
 
-    <img src="website_pic.jpg" style="float: right;" width="250">
+    <img src="website_pic.jpg" style="float: right;" width="150">
     <h1>Yu Leon Liu</h1>
     <p style="font-style: italic;"><b>yuleonliu*at*math.harvard.edu</b> </p>
     <p>
@@ -73,57 +73,72 @@
     </p>
 
     <h2>Research Interests</h2>
-    <p> My primary research interest is (mathematical) physics, mostly field theories and anomalies. 
+    <p> I write both math and physics papers, mostly in between. 
+        My primary research interest is mathematical physics, mostly field theories and anomalies. 
         Mathematically, I am also interested in knot homologies and homotopy theory.
         Besides math and physics, I am also interested in CS (DevOps,  kubernetes, type theory and functional programming
         languages).</p>
 
+    
     <hr>
-
+    
     <!--DON'T CHANGE THE FILE NAME OF Research AND senior_thesis.pdf!!!, IT MESSES UP THE CV LINK, AND THE CV IS GIVEN TO GRAD SCHOOLS. -->
 
     <h3>Paper and Preprints</h3>
     <!-- we use collapsible now baby-->
-    
-    <button type="button" class="collapsible"><a href="https://arxiv.org/abs/2112.02199"> <b>Abelian dualiy in topological field theory</b></a></button>
-    <div class="content">
-      <p>Accepted to Comm. Math. Phys.. 
-        For an extended version, see my <a href="Research/senior_thesis.pdf">senior thesis </a>. See <a href="Talk-notes/TopOrderCat2023.pdf"> here</a> for slides. 
-        </a>.</p>
-        <ul>
-            <li> We prove a topological version of abelian duality where the gauge groups are finite abelian. 
-                The theories are finite homotopy TFTs, topological analogues of the $p$-form $U(1)$ gauge theories where the gauge group is finite abelian. 
-                Using Brown-Comenetz duality, we extend our results to $\pi$-finite spectra. 
-            </li>
-        </ul>
-    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 
-    <button type="button" class="collapsible"> <a href="https://arxiv.org/abs/2112.10837"><b>Constructing the Virasoro groups from differential cohomology</b></a></button>
-    <div class="content">
-      <p>  Joint work with Arun Debray and Christoph Weis. 
-        Accepted to International Mathematics Research Notices (IMRN). See  <a href="Talk-notes/GSTGC-2022.pdf"> here</a> for slides. 
-        </p>
-        <ul>
-            <li> We give a geometric construction of the Virasoro central extensions from differential cohomology, using the differential lifts of the
-                1st Pontryagin differential class. Affirmatively confirming a conjecture of Freed-Hopkins.
-            </li>
-        </ul>
-    </div>
 
-    <button type="button" class="collapsible"><a href="https://arxiv.org/abs/2309.16749"> <b>A Long exact sequence in the Symmetry Breaking</b></a></button>
-    <div class="content">
-      <p>   Joint work with Arun Debray, Sanath Devalarpurker, Cameron Krulewski, Natalia Pacheco Tallaj, and Ryan Thorngren. See  <a href="Talk-notes/Smith_SBLES_CMSA_Talk_Slides.pdf"> here</a> for slides 
-        </p>
-        <ul>
-            <li> We study defects in symmetry breaking phases, such as domain walls, vortices, and hedgehogs. In particular, we focus on the localized gapless excitations which sometimes occur at the cores of these objects. These are topologically protected by an 't Hooft anomaly. We classify different symmetry breaking phases in terms of the anomalies of these defects, and relate them to the anomaly of the broken symmetry by an anomaly-matching formula. We also derive the obstruction to the existence of a symmetry breaking phase with a local defect. We obtain these results using a long exact sequence of groups of invertible field theories, which we call the "symmetry breaking long exact sequence" (SBLES). The mathematical backbone of the SBLES is the Smith homomorphism, a family of maps between twisted bordism groups. Though many examples have been studied, we give the first completely general account of the Smith homomorphism. We lift it to a map of Thom spectra and identify the cofiber, producing a long exact sequence of twisted bordism groups; the SBLES is the Anderson dual of that long exact sequence. Our work develops further the theory of higher Berry phase and its bulk-boundary correspondence and serves as a new computational tool for classifying symmetry protected topological phases.
-        </ul>
-    </li> 
-    </div> 
+<button type="button" class="collapsible"><a href="https://arxiv.org/abs/???"> <b>A braided $(\infty,2)$-category of Soergel bimodules</b></a></button>
+<div class="content">
+  <p> Joint work with Aaron Mazel-Gee, 
+    David Reutter, Catharina Stroppel, and Paul Wedrich. See Catharina's <a href="https://www.youtube.com/watch?v=_9FxudwLWzg&t=538s"> ICM</a> address for motivation and introduction of the ideas, and <a href="https://arxiv.org/abs/2207.05139">here </a> is the notes for the address.
+    Aaron gave a talk <a href="https://www.youtube.com/watch?v=YHqxfhsYfxI"> here</a>, and <a href="https://etale.site/writing/barcelona-knot-hlgy.pdf">here</a> is the slides</a>.
+</p>
+    <ul>
+        <li> The Hecke algebras for all symmetric groups taken together form a braided
+            monoidal category that controls all quantum link invariants of type A and, by
+            extension, the standard canon of topological quantum field theories in
+            dimension 3 and 4. Here we provide the first categorification of this Hecke
+            braided monoidal category, which takes the form of an $\mathbb{E}_2$-monoidal
+            $(\infty,2)$-category whose hom-$(\infty,1)$-categories are $k$-linear, stable,
+            idempotent-complete, and equipped with $\mathbb{Z}$-actions. This
+            categorification is designed to control homotopy-coherent link homology
+            theories and to-be-constructed topological quantum field theories in dimension
+            4 and 5.
+              Our construction is based on chain complexes of Soergel bimodules, with
+            monoidal structure given by parabolic induction and braiding implemented by
+            Rouquier complexes, all modelled homotopy-coherently. This is part of a
+            framework which allows to transfer the toolkit of the categorification
+            literature into the realm of $\infty$-categories and higher algebra. Along the
+            way, we develop families of factorization systems for $(\infty,n)$-categories,
+            enriched $\infty$-categories, and $\infty$-operads, which may be of independent
+            interest.
+              As a service aimed at readers less familiar with homotopy-coherent
+            mathematics, we include a brief introduction to the necessary
+            $\infty$-categorical technology in the form of an appendix.
+        </li>
+    </ul>
+</div>
 
     <button type="button" class="collapsible"><a href="https://arxiv.org/abs/2311.09293"> <b>Topological aspects of brane fields: solitons and higher-form symmetries</b></a></button>
     <div class="content">
       <p>   Joint work with Salvatore D. Pace. 
-        <!-- See  <a href="Talk-notes/Smith_SBLES_CMSA_Talk_Slides.pdf"> here</a> for slides  -->
         </p>
         <ul>
                 <li> In this note, we classify topological solitons of $n$-brane fields, which are
@@ -152,75 +167,46 @@
     </div> 
 
 
-    <!-- <li> <a href="https://arxiv.org/abs/2309.16749"> <b>A Long exact sequence in the Symmetry Breaking</b></a>: 
-       
+    <button type="button" class="collapsible"><a href="https://arxiv.org/abs/2309.16749"> <b>A Long exact sequence in the Symmetry Breaking</b></a></button>
+    <div class="content">
+      <p>   Joint work with Arun Debray, Sanath Devalarpurker, Cameron Krulewski, Natalia Pacheco Tallaj, and Ryan Thorngren. See <a href="https://www.youtube.com/watch?v=WU1TkzMz708">here</a> for Cameron and my CMSA talk, and <a href="Talk-notes/Smith_SBLES_CMSA_Talk_Slides.pdf"> here</a> for slides. 
+        </p>
         <ul>
             <li> We study defects in symmetry breaking phases, such as domain walls, vortices, and hedgehogs. In particular, we focus on the localized gapless excitations which sometimes occur at the cores of these objects. These are topologically protected by an 't Hooft anomaly. We classify different symmetry breaking phases in terms of the anomalies of these defects, and relate them to the anomaly of the broken symmetry by an anomaly-matching formula. We also derive the obstruction to the existence of a symmetry breaking phase with a local defect. We obtain these results using a long exact sequence of groups of invertible field theories, which we call the "symmetry breaking long exact sequence" (SBLES). The mathematical backbone of the SBLES is the Smith homomorphism, a family of maps between twisted bordism groups. Though many examples have been studied, we give the first completely general account of the Smith homomorphism. We lift it to a map of Thom spectra and identify the cofiber, producing a long exact sequence of twisted bordism groups; the SBLES is the Anderson dual of that long exact sequence. Our work develops further the theory of higher Berry phase and its bulk-boundary correspondence and serves as a new computational tool for classifying symmetry protected topological phases.
         </ul>
-    </li>  -->
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-        </script>
+    </li> 
+    </div>
+    
+    <button type="button" class="collapsible"> <a href="https://arxiv.org/abs/2112.10837"><b>Constructing the Virasoro groups from differential cohomology</b></a></button>
+    <div class="content">
+      <p>  Joint work with Arun Debray and Christoph Weis. 
+        Accepted to International Mathematics Research Notices (IMRN). See  <a href="Talk-notes/GSTGC-2022.pdf"> here</a> for slides. 
+        </p>
+        <ul>
+            <li> We give a geometric construction of the Virasoro central extensions from differential cohomology, using the differential lifts of the
+                1st Pontryagin differential class. Affirmatively confirming a conjecture of Freed-Hopkins.
+            </li>
+        </ul>
+    </div>
 
-
-    <!-- <ul>
-        <li> <a href="https://arxiv.org/abs/2112.02199"> <b>Abelian dualiy in topological field theory</b></a>: accepted to Comm. Math. Phys.
-            For an extended version, see my <a href="Research/senior_thesis.pdf">senior thesis </a>. See <a href="Talk-notes/TopOrderCat2023.pdf"> here</a> for slides. 
-            </a>.
-            <ul>
-                <li> We prove a topological version of abelian duality where the gauge groups are finite abelian. 
-                    The theories are finite homotopy TFTs, topological analogues of the $p$-form $U(1)$ gauge theories where the gauge group is finite abelian. 
-                    Using Brown-Comenetz duality, we extend our results to $\pi$-finite spectra. 
-                </li>
-            </ul>
-        </li>
-        <li>  <a href="https://arxiv.org/abs/2112.10837"><b>Constructing the Virasoro groups from differential cohomology</b></a>:
-            joint work with Arun Debray and Christoph Weis. 
-            Accepted to International Mathematics Research Notices (IMRN). See  <a href="Talk-notes/GSTGC-2022.pdf"> here</a> for slides. 
-            <ul>
-                <li> We give a geometric construction of the Virasoro central extensions from differential cohomology, using the differential lifts of the
-                    1st Pontryagin differential class. Affirmatively confirming a conjecture of Freed-Hopkins.
-                </li>
-            </ul>
-        </li>  -->
-
-        <!-- <li> <a href="https://arxiv.org/abs/2309.16749"> <b>A Long exact sequence in the Symmetry Breaking</b></a>: 
-            joint work with Arun Debray, Sanath Devalarpurker, Cameron Krulewski, Natalia Pacheco Tallaj, and Ryan Thorngren.
-            <ul>
-                <li> We study defects in symmetry breaking phases, such as domain walls, vortices, and hedgehogs. In particular, we focus on the localized gapless excitations which sometimes occur at the cores of these objects. These are topologically protected by an 't Hooft anomaly. We classify different symmetry breaking phases in terms of the anomalies of these defects, and relate them to the anomaly of the broken symmetry by an anomaly-matching formula. We also derive the obstruction to the existence of a symmetry breaking phase with a local defect. We obtain these results using a long exact sequence of groups of invertible field theories, which we call the "symmetry breaking long exact sequence" (SBLES). The mathematical backbone of the SBLES is the Smith homomorphism, a family of maps between twisted bordism groups. Though many examples have been studied, we give the first completely general account of the Smith homomorphism. We lift it to a map of Thom spectra and identify the cofiber, producing a long exact sequence of twisted bordism groups; the SBLES is the Anderson dual of that long exact sequence. Our work develops further the theory of higher Berry phase and its bulk-boundary correspondence and serves as a new computational tool for classifying symmetry protected topological phases.
-            </ul>
-        </li>  -->
-
-        <li> <b>Braided Monoidal Infinity 2 category from Soergel Bimodules</b>: Upcoming. joint work with Aaron Mazel-Gee, 
-            David Reutter, Catharina Stroppel, and Paul Wedrich. See Catharina's <a href="https://www.youtube.com/watch?v=_9FxudwLWzg&t=538s"> ICM</a> for motivation and introduction.
-            Aaron gave a talk <a href="https://www.youtube.com/watch?v=YHqxfhsYfxI"> here</a>, and here's the <a href="https://etale.site/writing/barcelona-knot-hlgy.pdf">slides</a>.
-            <ul>
-                <li> We construct a braided monoidal (\infty, 2) category whose endormorphisms categories are type A Soergel bimodules with their canonical 
-                    braid group action. 
-                </li>
-            </ul>
-        </li>
-    </ul>
+    <button type="button" class="collapsible"><a href="https://arxiv.org/abs/2112.02199"> <b>Abelian dualiy in topological field theory</b></a></button>
+    <div class="content">
+      <p>Accepted to Comm. Math. Phys.. 
+        For an extended version, see my <a href="Research/senior_thesis.pdf">senior thesis </a>. See <a href="Talk-notes/TopOrderCat2023.pdf"> here</a> for slides.</p>
+        <ul>
+            <li> We prove a topological version of abelian duality where the gauge groups are finite abelian. 
+                The theories are finite homotopy TFTs, topological analogues of the $p$-form $U(1)$ gauge theories where the gauge group is finite abelian. 
+                Using Brown-Comenetz duality, we extend our results to $\pi$-finite spectra. 
+            </li>
+        </ul>
+    </div>
     <hr>
 
 
     <h3>Notes</h3>
     <ul>
         <!--    DON'T CHANGE THE NAME 'Leon_CV'!!!-->
-        <li>Minor thesis on <a href="minor-thesis/minor-thesis.pdf"> Khovanov Homology and Knot Instanton Homologyh.</a></li>
+        <li>Minor thesis on <a href="minor-thesis/minor-thesis.pdf"> Khovanov Homology and Knot Instanton Homology.</a></li>
     </ul> 
     <hr>
 
@@ -228,14 +214,14 @@
     <ul>
         <!--    DON'T CHANGE THE NAME 'Leon_CV'!!!-->
         <li>GSTGC 2022 talk on<a href="Talk-notes/GSTGC-2022.pdf"> Virasoro and differential cohomology.</a></li>
-        <li>PI GCS 2022 poster on <a href="Talk-notes/smith-hom.pdf">Long Exact Sequence on Symmetry Breaking</a>. </li>
+        <li>PI GCS 2022 poster on <a href="Talk-notes/smith-hom.pdf">A Long Exact Sequence on Symmetry Breaking</a>. </li>
         <li>UCLA 2022 Algebraic Topology Seminar talk on  <a href="Talk-notes/UCLA2022.pdf">Stratification in Physical Systems</a> (in progress).</li>
         <li>APS March meeting 2023 on <a href="Talk-notes/MM-2023.pdf"> Symmetry breaking phase and crystalline phases: CEP, anomaly matching, and LSM </a> (in progress).</li>
-        <li>NEAT MAPS 2023 talk on <a href="Talk-notes/NEATMAPS.pdf">Braided monoidal 2-categories and knot homologies</a> (in progress)</li>
+        <li>NEAT MAPS 2023 talk on <a href="Talk-notes/NEATMAPS.pdf">Braided monoidal 2-categories and knot homologies</a> </li>
         <li>Top order and category theory seminar 2023 talk on <a href="Talk-notes/TopOrderCat2023.pdf">Abelian duality and topological field theories.</a></li>
         <li>Courcher summer school on Quantum Entanglement and Toplogy poster on <a href="Talk-notes/smith-hom.pdf">Long Exact Sequence on Symmetry Breaking</a>. </li>
         <li>Purdue 2023 Topology seminar on <a href="Talk-notes/Purdue talk slides full notes.pdf"> En algebras in m categories</a> (in progress). </li>
-        <li>CMSA Quantum Matter in Math and Physics on <a href="Talk-notes/Smith_SBLES_CMSA_Talk_Slides.pdf">  Long exact sequence in symmetry breaking. </a> See <a href="https://www.youtube.com/watch?v=WU1TkzMz708"> here </a> for the recording of the video. Nov 2023.</li> 
+        <li>CMSA Quantum Matter in Math and Physics on <a href="Talk-notes/Smith_SBLES_CMSA_Talk_Slides.pdf">  Long exact sequence in symmetry breaking. </a> See <a href="https://www.youtube.com/watch?v=WU1TkzMz708"> here</a> for the recording of the video. Nov 2023.</li> 
         <li>Amherst Topology seminar on <a href="Talk-notes/UCLA2022.pdf">Stratification in Physical Systems</a>(in progress).</li>
     </ul>
     <hr>
